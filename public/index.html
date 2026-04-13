@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Atividade 6 - Pessoas e produções Bootstrap</title>
+
+    <style>
+        .noticias a {
+            color: #c7d5e0;
+            text-decoration: none;
+        }
+        .noticias a:hover {
+            color: #66c0f4;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="d-flex flex-column min-vh-100" style="background:#171a21; color:#c7d5e0;">
+
+<header class="d-flex flex-lg-row flex-column align-items-center justify-content-between px-4 py-3 gap-3"
+style="background:#1b2838;">
+
+    <a href="index.html">
+        <img src="images/logo.png" style="height:100px; width:100px;">
+    </a>
+
+    <form style="max-width:400px; width:100%;">
+        <input type="search" class="form-control border-0"
+        placeholder="Pesquisar"
+        style="background:#2a475e; color:#c7d5e0; height:40px;">
+    </form>
+
+    <nav class="d-flex flex-wrap gap-2 justify-content-center">
+        <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">Categoria 1</button>
+        <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">Categoria 2</button>
+        <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">Categoria 3</button>
+        <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">Categoria 4</button>
+    </nav>
+
+    <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">
+        Login
+    </button>
+
+</header>
+
+<main class="container-fluid p-3 flex-grow-1">
+
+    <div class="row g-3">
+
+        <div class="col-lg-9 d-flex flex-column gap-3">
+
+            <div style="
+                width:100%;
+                min-height:400px;
+                background:url('images/pessoas/gabenewell.png') center/cover;
+            "></div>
+
+            <section class="d-flex flex-column text-center gap-3">
+
+                <h1 class="m-0">Desenvolvedores de jogos</h1>
+
+                <div class="d-flex justify-content-end" style="background:#2a475e;">
+                    <button class="btn px-3" style="background:#2a475e; color:#c7d5e0;">
+                        Ordenar por
+                    </button>
+                </div>
+
+                <div class="row g-3">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="images/pessoas/hideokojima.png" class="img-fluid">
+                        <h5 class="mt-2">Hideo Kojima</h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="images/pessoas/gabenewell.png" class="img-fluid">
+                        <h5 class="mt-2">Gabe Newell</h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="images/pessoas/hidetakamiyazaki.png" class="img-fluid">
+                        <h5 class="mt-2">Hidetaka Miyazaki</h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="images/pessoas/shigerumiyamoto.png" class="img-fluid">
+                        <h5 class="mt-2">Shigeru Miyamoto</h5>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="col-lg-3">
+
+            <div class="noticias d-flex flex-column p-3 gap-3 h-100"
+            style="background:#1b2838;">
+
+                <a href="#" class="d-flex flex-column gap-1 pb-2 border-bottom">
+                    <div>Notícia 1</div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet...</p>
+                </a>
+
+                <a href="#" class="d-flex flex-column gap-1 pb-2 border-bottom">
+                    <div>Notícia 2</div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet...</p>
+                </a>
+
+                <a href="#" class="d-flex flex-column gap-1 pb-2 border-bottom">
+                    <div>Notícia 3</div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet...</p>
+                </a>
+
+                <a href="#" class="d-flex flex-column gap-1 pb-2 border-bottom">
+                    <div>Notícia 4</div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet...</p>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="text-center py-3 mt-auto" style="background:#1b2838;">
+    © 2026 Yandi Orlando. Todos os direitos reservados.
+</footer>
+
 </body>
+<!-- comentário aleatório só pra testar o envio pro git hub -->
 </html>
